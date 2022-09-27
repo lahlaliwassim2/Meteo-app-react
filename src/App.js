@@ -21,7 +21,13 @@ const App = () => {
      <div className='btn-shear d-flex justify-content-end my-3'> <button className='btn btn-primary'> rechercher </button></div>
      <hr />
      <div className='d-flex justify-content-center aligh-items-center'>
-      {Data ? <><h4>{Data.main.temp}</h4> C</> : "entrer une autre ville"}
+      {Data ? <><h1>
+        {Math.round( Data.main.temp - 273.15)}
+        
+        <sup>°</sup>
+        C</h1> 
+        </> 
+        : "entrer une autre ville"}
      </div>
       </div>
     </div>
