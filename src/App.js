@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { WiHumidity } from "react-icons/wi"
+import {FiWind} from "react-icons/fi"
+import {BsFillSunFill} from "react-icons/bs"
+
+
+
 const App = () => {
       const  [Data, setData] = useState("");
   const fetchData = async() => {
@@ -20,13 +26,19 @@ const App = () => {
       <input type="shearch" placeholder='entrer la ville '/>
      <div className='btn-shear d-flex justify-content-end my-3'> <button className='btn btn-primary'> rechercher </button></div>
      <hr />
-     <div className='d-flex justify-content-center aligh-items-center'>
+     <div className='d-flex justify-content-center aligh-items-center flex-column'>
       {Data ? <><h1>
         {Math.round( Data.main.temp - 273.15)}
         
         <sup>°</sup>
-        C</h1> 
-        </> 
+        C</h1>
+        <div className='row'>
+          <div className='d-flex col-lg-4 col-4'>Prossure <BsFillSunFill /> :{ Data.main.pressure
+}</div>
+          <div className='col-lg-4 d-flex col-4'>Humiditée <WiHumidity />:<br></br>{Data.main.humidity}</div>
+          <div className='col-lg-4 col-4 d-flex'>Vent: <FiWind />{Data.wind.speed}KM/h </div>
+          </div> 
+        </>  
         : "entrer une autre ville"}
      </div>
       </div>
