@@ -2,17 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
+
 }
 .app_title{
-  padding: 15px;
- 
+  padding: 16px;
+  background: rgb(17, 2, 2);
+  opacity: 0.6;
   border-radius: 10px;
   box-shadow: 2px 2px 10px silver;
+  color: rgb(249, 246, 246);
 }
 .app input{
   width: 100%;
+  padding: 5px;
   outline: none;
+  border-radius: 30px;
   margin: 2px;
 }
 
@@ -21,3 +26,64 @@
   justify-content: center;
   align-items: center;
 }
+.youc{
+  font-size: 25px;
+  color: rgb(119, 119, 161);
+  background: rgb(17, 2, 2);
+  opacity: 0.6;
+ 
+
+}
+.w1{
+  font-size: 50px;
+  color: rgb(158, 158, 244);
+}
+.w2{
+  font-size: 50px;
+  color: rgb(108, 108, 242);
+}
+.w3{
+  font-size: 50px;
+  color: rgb(82, 82, 244);
+}
+.w4{
+  font-size: 50px;
+  color: rgb(75, 75, 216);
+}
+.w5{
+  font-size: 50px;
+  color: rgb(52, 52, 178);
+}
+.w6{
+  font-size: 50px;
+  color: rgb(38, 38, 175);
+}
+.w7{
+  font-size: 50px;
+  color: rgb(49, 49, 195);
+}
+.w8{
+  font-size: 50px;
+  color: rgb(32, 32, 176);
+}
+.w9{
+  font-size: 50px;
+  color: rgb(22, 22, 126);
+}
+.w10{
+  font-size: 50px;
+  color: rgb(17, 17, 109);
+}
+body{
+
+  background-image: url('../public/img/fin.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.youc h1{
+  background: rgb(17, 2, 2);
+  opacity: 0.6;
+}
+
