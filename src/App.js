@@ -33,7 +33,7 @@ const App = () => {
         
       
      
-      <h3 className='  d-flex justify-content-end p-3 youc'><span className='w1'>Y</span><span className='w2'>o</span><span className='w3'>u</span><span className='w4'>W</span><span className='w5'>e</span><span className='w6'>a</span><span className='w7'>t</span><span className='w8'>h</span><span className='w9'>e</span><span className='w10'>r</span></h3>
+      <h3 className='  d-flex justify-content-end p-3 youc'><span className='w1'>C</span><span className='w2'>i</span><span className='w3'>t</span><span className='w4'>y</span><span className='w5'>'s W</span><span className='w6'></span><hr></hr><span className='w7'></span><span className='w8'>e</span><span className='w9'>a</span><span className='w9'>t</span><span className='w10'>h</span><span className='w7'>er</span></h3>
       <div className='container app d-flex flex-colomn'>
      
         <div className='app_title'>
