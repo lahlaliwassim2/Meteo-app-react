@@ -5,7 +5,7 @@ import { FiWind } from "react-icons/fi"
 import { BsFillSunFill } from "react-icons/bs"
 
 
-const meteoImg = new URL("../public/img/meteo.jpg" , import.meta.url)
+
 
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     shear();
-  }, []);
+  }, [] );
   console.log(Data)
   return (
     <>
@@ -41,6 +41,8 @@ const App = () => {
           <input type="shearch" placeholder='entrer la ville '
             onChange={change}
             value={Input}
+            
+            
           />
           <div className='btn-shear d-flex justify-content-end my-3'>
              <button className='btn btn-primary' onClick={shear}> rechercher 
